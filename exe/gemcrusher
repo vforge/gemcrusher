@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'gemcrusher'
+
+crusher = Gemcrusher::Crusher.new
+crusher.crush
