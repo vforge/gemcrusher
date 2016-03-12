@@ -53,11 +53,11 @@ module Gemcrusher
 
           # gem homepage uri
           homepage_uri = info['homepage_uri'].strip
-          file.puts "Homepage: [#{homepage_uri}](#{homepage_uri})"
+          file.puts "* #{homepage_uri}"
 
           # gem project uri
           project_uri = info['project_uri'].strip
-          file.puts "Rubygems: [#{project_uri}](#{project_uri})"
+          file.puts "* #{project_uri}"
         end
       end
     end
