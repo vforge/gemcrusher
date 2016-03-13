@@ -1,6 +1,6 @@
 # Gemcrusher
 
-Crushing your Gemfile
+Crushing your Gemfile into a readable list.
 
 ## Installation
 
@@ -20,7 +20,39 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+After gem is installed you can invoke it with
+
+    $ gemcrusher
+
+It will read current directory's `Gemfile`, find all used gems and outputs some basic information (from rubygems.org) in Markdown format to `Gemfile.md` file.
+
+Currently those fields are being stored in the output:
+* info
+* homepage URI
+* URI on rubygems.org
+
+### Example
+
+This gem's `Gemfile`:
+
+```ruby
+source 'https://rubygems.org'
+
+gem 'gems'
+
+# Specify your gem's dependencies in gemcrusher.gemspec
+gemspec
+```
+
+Is giving this output (you can read this file [here](Gemfile.md)):
+
+```markdown
+# Gem list
+### gems
+Ruby wrapper for the RubyGems.org API
+* https://github.com/rubygems/gems
+* https://rubygems.org/gems/gems
+```
 
 ## Development
 
@@ -30,7 +62,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/gemcrusher. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at (https://github.com/vforge/gemcrusher). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License

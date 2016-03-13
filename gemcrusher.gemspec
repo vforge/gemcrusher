@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Bartosz V. Bentkowski"]
   spec.email         = ["vforge@users.noreply.github.com"]
 
-  spec.summary       = %q{Crushying your Gemfile into a readable list}
+  spec.summary       = %q{Crushing your Gemfile into a readable list}
   spec.homepage      = "http://github.com/vforge/gemcrusher"
   spec.license       = "MIT"
 
