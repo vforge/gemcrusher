@@ -3,4 +3,4 @@
 require 'gemcrusher'
 
 crusher = Gemcrusher::Crusher.new
-crusher.crush
+crusher.crush 'Gemfile', 'Gemfile.md'
